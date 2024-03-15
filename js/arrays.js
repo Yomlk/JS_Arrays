@@ -70,3 +70,10 @@ function task8(){
     console.log(`было ${user}, стало ${arr.join('')}`)
     }
     }    
+//9-ая Задача
+function task9() {
+let arr = ['http://vk.com', , 'hello' , 'http://instagram.com', 'privet'];
+console.log(arr.toString());
+arr = arr.filter(elem => elem.startsWith("http://"));
+console.log(arr.toString());   
+} 
