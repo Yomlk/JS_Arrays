@@ -25,3 +25,10 @@ function task3(){
     
     console.log(proverka(arr));
     }
+//4-ая Задача
+function task4(){
+    let arr = Array.from(Array(10),()=>{return Math.round(Math.random()*20)});
+    console.log(arr.toString());
+    let newArr = arr.filter((elem)=>elem%5==0);
+    console.log(newArr);
+    }
