@@ -52,3 +52,12 @@ function task6(){
     let swi = arr.shift();
     console.log(arr.toString());
     }
+//7-ая Задача 
+function task7(){
+    let arr = Array.from(Array(10),()=>{return Math.round(Math.random()*20)});
+    console.log(arr.toString());
+    let sumeven = arr.filter(index=>index%2==0).reduce((total,elem)=>total+elem,0);
+    let sumodd = arr.filter(index=>index%2!==0).reduce((total,elem)=>total+elem,0);
+    let result = sumeven/sumodd;
+    console.log(result)
+    }
