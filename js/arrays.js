@@ -14,7 +14,7 @@ function task2() {
     let sum = arr.filter(index=>index>0 && index<10).reduce((total,index)=>total+index,0);
     console.log(sum)
     }
-    task2();
+    
 //3-ая Задача
 function task3(){
     let arr = Array.from(Array(3),()=>{return Math.round(Math.random()*20)});
