@@ -61,3 +61,12 @@ function task7(){
     let result = sumeven/sumodd;
     console.log(result)
     }
+//8-ая Задача
+function task8(){
+    let user = prompt("введите число");
+    if (isNaN(user)) console.log("ошибка");
+    else{
+    let arr = user.split('').map(elem=>+elem+1);
+    console.log(`было ${user}, стало ${arr.join('')}`)
+    }
+    }    
