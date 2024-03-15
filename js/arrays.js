@@ -7,4 +7,11 @@ function task1(){
     
 }
 
-
+//2-ая Задача
+function task2() {
+    let arr=Array.from(Array(10),()=>{return Math.round(Math.random()*20)});
+    console.log(arr.toString());
+    let sum = arr.filter(index=>index>0 && index<10).reduce((total,index)=>total+index,0);
+    console.log(sum)
+    }
+    task2();
