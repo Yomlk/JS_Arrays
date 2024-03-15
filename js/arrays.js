@@ -32,3 +32,15 @@ function task4(){
     let newArr = arr.filter((elem)=>elem%5==0);
     console.log(newArr);
     }
+//5-ая Задача
+function task5() {
+    let SredAref = function(arr) {
+    let sum = arr.reduce((total,elem)=>total+elem,0);
+    return sum/arr.length
+    }
+    let arr = Array.from(Array(10),()=>{return Math.round(Math.random()*20)});
+    console.log(arr.toString());
+    let round = SredAref(arr);
+    console.log(round.toFixed(1));
+    
+    }
