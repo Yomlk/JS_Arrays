@@ -44,3 +44,11 @@ function task5() {
     console.log(round.toFixed(1));
     
     }
+//6-ая Задача
+function task6(){
+    let arr = Array.from(Array(5),()=>{return Math.round(Math.random()*20)});
+    console.log(arr.toString());
+    let push = arr.push(arr[0]);
+    let swi = arr.shift();
+    console.log(arr.toString());
+    }
